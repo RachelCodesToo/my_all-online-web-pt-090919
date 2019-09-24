@@ -7,7 +7,6 @@ def my_all?(collection)
     block_returns_values << yield(collection[i])
        i += 1 
       end
-      binding.pry
       if block_returns_values.include?(false)
         false
       else
